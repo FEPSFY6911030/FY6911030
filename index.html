@@ -83,7 +83,9 @@
      hello test 1
   <hr>
     <h3 id="Introduction">Introduction</h3>
+  <pre id="Introduction_InText">
      hello test 2
+  </pre>
    <hr>
     <h3 id=”Analysis and discussion”>Analysis and discussion</h3>
      hello test 3
@@ -163,8 +165,8 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis and discussion");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
