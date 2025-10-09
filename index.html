@@ -80,7 +80,9 @@
   
     <hr>
     <h3 id="Abstract">Abstract</h3>
+  <pre id="Abstarct_InText">
      hello test 1
+  </pre>
   <hr>
     <h3 id="Introduction">Introduction</h3>
   <pre id="Introduction_InText">
@@ -93,7 +95,9 @@
   </pre>
    <hr>
   <h3 id="References">References</h3>
+  <pre id="Reference_InText">
      hello test 4
+  </pre>
    <hr>
 
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -167,10 +171,12 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
+    const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const ReferenceCount = displayWordCount("Reference_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + AbstarctCount + ReferenceCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
