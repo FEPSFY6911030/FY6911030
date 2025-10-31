@@ -52,13 +52,29 @@
       <tr>
         <th><h3>Table of Contents</h3></th>
       </tr>
+     
       <tr>
         <td><a href="#Abstract">Abstract</td>
       </tr>
+     
       <tr>
         <td><a href="#Introduction">Introduction</td>
-      </tr><tr>
-        <td><a href="#Analysis and discussion">Analysis and discussion</td>
+      </tr>
+     
+     <tr>
+        <td><a href="#Background">Background</td>
+      </tr>
+
+      <tr>
+        <td><a href="#Mathematics and graphs">Mathematics and graphs</td>
+      </tr>
+
+     <tr>
+        <td><a href="#Results">Results</td>
+      </tr>
+
+     <tr>
+        <td><a href="#Conclusion">References</td>
       </tr>
 
       <tr>
@@ -81,7 +97,7 @@
   
 
     <h3 id="Abstract">Abstract</h3>
-  <pre id="Abstract_InText">
+  <pre>
      hello test 1
   </pre>
   
@@ -89,21 +105,39 @@
     <h3 id="Introduction">Introduction</h3>
   <pre id="Introduction_InText">
      Unlike other supernova explosions which occurs when a star can no longer fuse heavier elements and the battle between gravity and nuclear fission comes to an end, supernovae in binary star systems are triggered by interactions betweeen two stars orbiting each other.
-     In these systems, accretion from one star to the other can destabilise the balance of forces causing a massive explosion. This process can produce Type 1a supernovae where a white dwarf gains too much mass from it's other star.  Although amassive star that is responsible
-     for a Type II supernovaexplosion can be in a single or a binary system, the Type Iaprogenitor scenarios that are based on the thermonuclearexplosion of an accreting white dwarf require a companionas a mass donor to enable the white dwarf to reach itscritical mass.
+     In these systems, accretion from one star to the other can destabilise the balance of forces causing a massive explosion. This process can produce Type 1a supernovae where a white dwarf gains too much mass from it's other star.  Although a massive star that is responsible
+     for a Type II supernova explosion can be in a single or a binary system, the Type Ia progenitor scenarios that are based on the thermonuclear explosion of an accreting white dwarf require a companion as a mass donor to enable the white dwarf to reach its critical mass.
      (Marietta, Burrows and Fryxell, 2000)
   </pre>
   
    <hr>
-    <h3 id="Analysis and discussion">Analysis and discussion</h3>
-  <pre id="Analysis_InText">
+    <h3 id="Background">Background</h3>
+  <pre id="Background_InText">
      hello test 3
+  </pre>
+
+  <hr>
+    <h3 id="Mathematics and graphs">Mathematics and graphs</h3>
+  <pre id="Mathematics and graphs_InText">
+     hello test 4
+  </pre>
+
+  <hr>
+    <h3 id="Results">Results</h3>
+  <pre id="Results_InText">
+     hello test 5
+  </pre>
+
+  <hr>
+    <h3 id="Conclusion">Conclusion</h3>
+  <pre id="Conclusion_InText">
+     hello test 6
   </pre>
   
    <hr>
   <h3 id="References">References</h3>
-  <pre id="Reference_InText">
-     hello test 4
+  <pre>
+     hello test 7
   </pre>
   
    <hr>
@@ -179,10 +213,11 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
+    const MathematicsandgraphsCount = displayWordCount("Mathematics and graphs_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    const ReferenceCount = displayWordCount("Reference_InText");
+    const BackgroundCount = displayWordCount("Background_InText");
+    const ResultsCount = displayWordCount("Results_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount + AbstractCount + ReferenceCount;
     // Display the total word count
