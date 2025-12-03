@@ -1,4 +1,4 @@
- <html>
+e <html>
 
   <head>
     <img src="WebBanner2023.png" alt="Banner" width="1200" height="300"> 
@@ -87,6 +87,45 @@
     .mySlides {
       display: none;
     }
+
+         .figure {
+      max-width: 900px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .figure img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #dddddd;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+
+    .figure figcaption {
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    .data-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 900px;
+      margin: 15px 0 20px 0;
+      font-size: 15px;
+    }
+
+    .data-table th,
+    .data-table td {
+      border: 1px solid #dddddd;
+      padding: 6px 8px;
+      text-align: left;
+    }
+
+    .data-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
   </style>
 </head>
 
@@ -174,10 +213,13 @@ In addition, recent reviews such as Liu, Röpke and Han (2023) highlight how dif
 
   <hr />
 
-  <!-- MATHEMATICS AND GRAPHS -->
-  <div class="section">
+  
+    <div class="section">
     <h3 id="Mathematics_and_graphs">Mathematics and graphs</h3>
     <p id="Mathematics_and_graphs_InText" class="para">
+      ...
+    </p>
+  </div>
 The physics of supernovae in binary systems can be described using several key ideas and equations. One important concept is the Chandrasekhar limit, which defines the maximum mass a white dwarf can support before collapsing. 
 This limit comes from the balance between electron degeneracy pressure, which supports the white dwarf, and the gravitational force trying to compress it. If a white dwarf in a binary system accretes enough material
 from its companion to approach this critical mass, the degeneracy pressure can no longer counteract gravity, triggering a thermonuclear runaway that results in a Type Ia supernova 
@@ -191,6 +233,50 @@ E = (3GM²) / 5R
 where G is the gravitational constant, M is the mass and R is the radius.
 
 These simple models help explain why some binary systems are disrupted and why surviving stars can move quickly or show signs of damage after the explosion (Marietta, Burrows and Fryxell, 2000).
+
+    <table class="data-table">
+      <caption style="text-align:left; margin-bottom:4px;"><b>Table 1.</b> Different types of Type Ia supernovae and the basic conditions required.</caption>
+      <thead>
+        <tr>
+          <th>Supernova type</th>
+          <th>Brightness</th>
+          <th>Decline rate</th>
+          <th>Typical conditions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Normal Type Ia</td>
+          <td>Medium–bright</td>
+          <td>Follows Phillips relation</td>
+          <td>White dwarf near the Chandrasekhar limit (~1.4 M☉) accreting from a companion star.</td>
+        </tr>
+        <tr>
+          <td>91T-like</td>
+          <td>Very bright</td>
+          <td>Slow decline</td>
+          <td>High-mass white dwarf with strong iron-group elements; efficient mass transfer in a binary.</td>
+        </tr>
+        <tr>
+          <td>91bg-like</td>
+          <td>Faint</td>
+          <td>Fast decline</td>
+          <td>Sub-Chandrasekhar white dwarf; cooler explosion; often seen in older stellar populations.</td>
+        </tr>
+        <tr>
+          <td>SNe Iax</td>
+          <td>Wide range</td>
+          <td>Slow decline</td>
+          <td>Partial or “failed” thermonuclear explosion; companion star may survive in the binary.</td>
+        </tr>
+        <tr>
+          <td>Super-Chandrasekhar</td>
+          <td>Extremely bright</td>
+          <td>Slow decline</td>
+          <td>White dwarf exceeding the Chandrasekhar mass, possibly due to a merger of two white dwarfs.</td>
+        </tr>
+      </tbody>
+    </table>
     </p>
   </div>
 
