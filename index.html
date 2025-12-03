@@ -8,177 +8,235 @@
     <h2 style="font-family:calibri;"><b>Conference paper: Supernova in binary star systems</b></h2>
     <hr>
 
-    <!style for table>
-      <style>
-          table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse:
-            width: 30%;
-
-            }
-            
-        td, th {
-          border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-               }
-
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
-
-
-
-            
-      </style>
-
     <style>
-      p.ex1 {
-        margin-left: 250px;
-      }
-    </style>
-  </head>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0 50px 50px 50px;
+      font-family: Calibri, Arial, sans-serif;
+    }
 
-    <meta name="viewport" content="width=device-width, initial scale+1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <style>
-    .mySlides {display:none;}
+    header {
+      max-width: 1200px;
+      margin: 0 auto 20px auto;
+      text-align: left;
+    }
+
+    header img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    h1, h2, h3 {
+      margin: 5px 0;
+    }
+
+    hr {
+      margin: 15px 0;
+    }
+
+    
+    table.toc {
+      font-family: Calibri, Arial, sans-serif;
+      border-collapse: collapse;
+      width: 30%;
+      margin-bottom: 20px;
+    }
+
+    table.toc td,
+    table.toc th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    table.toc tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .paper-title {
+      font-size: 40px;
+      text-align: center;
+      font-weight: bold;
+      margin: 20px auto 30px auto;
+      max-width: 900px;
+    }
+
+    .para {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
+      white-space: pre-wrap; 
+      margin-bottom: 10px;
+      max-width: 900px;
+    }
+
+    #last-updated {
+      margin-top: 20px;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .section {
+      max-width: 900px;
+      margin-bottom: 20px;
+    }
+
+    .mySlides {
+      display: none;
+    }
   </style>
+</head>
 
-     <body style="background-color:#FFFFFF;margin-left:50px;">
-<!table of contents>
-    <table>
-      
-      <tr>
-        <th><h3>Table of Contents</h3></th>
-      </tr>
-     
-      <tr>
-        <td><a href="#Abstract">Abstract</td>
-      </tr>
-     
-      <tr>
-        <td><a href="#Introduction">Introduction</td>
-      </tr>
-     
-     <tr>
-        <td><a href="#Background">Background</td>
-      </tr>
+<body>
 
-      <tr>
-        <td><a href="#Mathematics_and_graphs">Mathematics and graphs</td>
-      </tr>
+  <table class="toc">
+    <tr>
+      <th><h3>Table of Contents</h3></th>
+    </tr>
+    <tr>
+      <td><a href="#Abstract">Abstract</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Introduction">Introduction</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Background">Background</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Mathematics_and_graphs">Mathematics and graphs</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Results">Results</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Conclusion">Conclusion</a></td>
+    </tr>
+    <tr>
+      <td><a href="#References">References</a></td>
+    </tr>
+  </table>
 
-     <tr>
-        <td><a href="#Results">Results</td>
-      </tr>
+ 
+  <div class="paper-title">
+    Exploding Together: How Binary Stars End Their Lives
+  </div>
 
-     <tr>
-        <td><a href="#Conclusion">Conclusion</td>
-      </tr>
-
-      <tr>
-        <td><a href="#References">References</td>
-      </tr>
-
-      
-    </table>
-   
-
-
-       <p class="ex1">
-       <pre>
-        <h3 style="font-size:40px;"><center><b>Exploding Together: How Binary Stars End Their Lives</b></center></h3>
-             
-       </pre>
-     </p>
-
+ 
+  <div class="section">
     <h3 id="Abstract">Abstract</h3>
-  <pre>
-     Supernovae are among the most energetic events in the universe, marking the violent deaths of stars and the recycling of stellar material. 
-     This project focuses on supernovae in binary star systems, where the interaction between two stars fundamentally changes how and when explosions occur.
-  </pre>
-  
-  <hr>
+    <p class="para">
+Supernovae are among the most energetic events in the universe, marking the violent deaths of stars and the recycling of stellar material. 
+This project focuses on supernovae in binary star systems, where the interaction between two stars fundamentally changes how and when explosions occur.
+    </p>
+  </div>
+
+  <hr />
+
+ 
+  <div class="section">
     <h3 id="Introduction">Introduction</h3>
-  <pre id="Introduction_InText">
-     Upon a star’s death it implodes as a supernova, one of the largest explosions known to happen in the universe. 
-     A supernova blasts energy out into the universe and it also creates almost all of the heavy elements found in planets and organisms.
-     Yet supernovae happen from single stars. However, many of those large stars are born in binary systems, meaning they orbit together, as well.
+    <p id="Introduction_InText" class="para">
+When a massive star reaches the end of its life, it can explode as a supernova, one of the largest explosions known to happen in the universe. 
+A supernova blasts energy out into space and also creates many of the heavy elements found in planets and living organisms.
+Supernovae can occur in single stars, but many massive stars are born in binary systems, meaning they orbit together as a pair.
 
-     Binary systems operate differently than single systems. The gravitational pull on them from another mass and potential mass transferring evolution changes how they operate.
-     For example, if a massive star were to explode in a binary system, its companion star is not left in peace. A supernova explosion can eject massive particulate and gas
-     at its companion star at thousands of kilometers per second, alter its trajectory or even destroy the binary system completely.
+Binary systems behave differently from single stars. Gravity and mass transfer between the two stars can change how they evolve. 
+For example, if a massive star explodes in a binary system, its companion star is not left untouched. A supernova explosion can eject gas and debris
+at thousands of kilometres per second towards the companion, changing its motion or even destroying the binary system completely.
 
-     Because of this, researchers have found that studying binary systems is important for understanding the different pathways that lead to supernovae.
-     It also helps explain unusual stars observed today, such as runaway stars and companion stars with strange chemical compositions, which are likely the survivors of past binary supernova explosions.
-   
-  </pre>
-  
-   <hr>
+Because of this, researchers have found that studying binary systems is important for understanding the different pathways that lead to supernovae.
+It also helps explain unusual stars observed today, such as runaway stars and companion stars with strange chemical compositions, which are likely the survivors of past binary supernova explosions (Liu et al., 2023).
+    </p>
+  </div>
+
+  <hr />
+
+ 
+  <div class="section">
     <h3 id="Background">Background</h3>
-  <pre id="Background_InText">
-    One important finding is that early stars in the universe behaved differently from modern stars. Suda et al. (2021) showed that the first stars had extremely low metal content,
-    which prevented them from expanding into large red supergiants. Instead, they stayed relatively small, allowing binary systems to remain stable until one star eventually exploded (Suda et al., 2021).
-    This meant that the companion star could be directly hit by the supernova ejecta.
+    <p id="Background_InText" class="para">
+One important finding is that early stars in the universe behaved differently from modern stars. Suda et al. (2021) showed that the first stars had extremely low metal content,
+which prevented them from expanding into large red supergiants. Instead, they stayed relatively small, allowing binary systems to remain stable until one star eventually exploded (Suda et al., 2021).
+This meant that the companion star could be directly hit by the supernova ejecta.
 
-    Another major contribution comes from the simulation work of Marietta, Burrows and Fryxell (2000), who modelled how supernova ejecta interact with a companion star.
-    Their results demonstrated that the explosion can strip away part of the companion’s outer layers, with the amount removed depending on the distance between the two stars (Marietta, Burrows and Fryxell, 2000).
+Another major contribution comes from the simulation work of Marietta, Burrows and Fryxell (2000), who modelled how supernova ejecta interact with a companion star.
+Their results demonstrated that the explosion can strip away part of the companion’s outer layers, with the amount removed depending on the distance between the two stars (Marietta, Burrows and Fryxell, 2000).
 
-    Observational evidence supports these models. For example, Dincel et al. (2024) searched supernova remnants for runaway OB-type stars, which are stars moving at unusually high speeds. 
-    These stars are likely the former companions of systems that were disrupted by a supernova explosion (Dincel et al., 2024).
-   
-  </pre>
+Observational evidence supports these models. For example, Dincel et al. (2024) searched supernova remnants for runaway OB-type stars, which are stars moving at unusually high speeds. 
+These stars are likely the former companions of systems that were disrupted by a supernova explosion (Dincel et al., 2024).
 
-  <hr>
+In addition, recent reviews such as Liu, Röpke and Han (2023) highlight how different binary scenarios can lead to a wide variety of Type Ia supernovae with different brightness and decline rates.
+    </p>
+  </div>
+
+  <hr />
+
+  <!-- MATHEMATICS AND GRAPHS -->
+  <div class="section">
     <h3 id="Mathematics_and_graphs">Mathematics and graphs</h3>
-  <pre id="Mathematics_and_graphs_InText">
-     The physics of supernovae in binary systems can be described using several key equations. The Chandrasekhar limit defines the maximum mass a white dwarf can support before collapsing. 
-     This limit comes from the balance between electron degeneracy pressure, which supports the white dwarf, and the gravitational force trying to compress it. If a white dwarf in a binary system accretes enough material
-     from its companion to approach this critical mass, the degeneracy pressure can no longer counteract gravity, triggering a thermonuclear runaway that results in a Type Ia supernova 
-     (Chandrasekhar, 1931; Thorsett, 1996).
+    <p id="Mathematics_and_graphs_InText" class="para">
+The physics of supernovae in binary systems can be described using several key ideas and equations. One important concept is the Chandrasekhar limit, which defines the maximum mass a white dwarf can support before collapsing. 
+This limit comes from the balance between electron degeneracy pressure, which supports the white dwarf, and the gravitational force trying to compress it. If a white dwarf in a binary system accretes enough material
+from its companion to approach this critical mass, the degeneracy pressure can no longer counteract gravity, triggering a thermonuclear runaway that results in a Type Ia supernova 
+(Chandrasekhar, 1931; Thorsett, 1996).
 
-     The gravitational potential energy released during a core collapse supernova can be approximated by:
-     E= (3GM^2)/5R
-     Where G is the gravitational constant, M is the mass and R is the radius.
+A simple rule for whether a binary system stays together after an explosion is that if the supernova causes the exploding star to lose more than about half of the total mass of the system,
+the gravity between the stars becomes too weak to keep them bound. In that case, the companion star can fly off on its own as a runaway star.
 
-     
-  </pre>
+The gravitational potential energy released during a core-collapse supernova can be approximated by:
+E = (3GM²) / 5R
+where G is the gravitational constant, M is the mass and R is the radius.
 
-  <hr>
+These simple models help explain why some binary systems are disrupted and why surviving stars can move quickly or show signs of damage after the explosion (Marietta, Burrows and Fryxell, 2000).
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="section">
     <h3 id="Results">Results</h3>
-  <pre id="Results_InText">
-     Scientists studying supernovae in binary systems have found several key outcomes. First, the companion star can be physically damaged by the explosion. The supernova ejecta fast-moving gas and debris that can
-     hit the companion star hard enough to remove some of its outer layers or heat it up, changing how it looks and behaves (Marietta, Burrows and Fryxell, 2000).
+    <p id="Results_InText" class="para">
+Scientists studying supernovae in binary systems have found several key outcomes. First, the companion star can be physically damaged by the explosion. The supernova ejecta are fast-moving gas and debris that can
+hit the companion star hard enough to remove some of its outer layers or heat it up, changing how it looks and behaves (Marietta, Burrows and Fryxell, 2000).
 
-     Second, observations show that some stars move through space much faster than expected. These “runaway stars” are thought to be the leftover
-     companions from binary systems that were blown apart when the other star exploded (Dincel et al., 2024).
+Second, observations show that some stars move through space much faster than expected. These “runaway stars” are thought to be the leftover
+companions from binary systems that were blown apart when the other star exploded (Dincel et al., 2024).
 
-     Finally, some stars show unusual chemical patterns, including extra heavy elements or lower levels of lithium, which suggests they were polluted by supernova material in the past (Suda et al., 2021).
-     These findings support the idea that binary supernovae can leave behind clear clues that astronomers can still detect today.
-  </pre>
+Finally, some stars show unusual chemical patterns, including extra heavy elements or lower levels of lithium, which suggests they were polluted by supernova material in the past (Suda et al., 2021).
+These findings support the idea that binary supernovae can leave behind clear clues that astronomers can still detect today.
+    </p>
+  </div>
 
-  <hr>
+  <hr />
+
+  <div class="section">
     <h3 id="Conclusion">Conclusion</h3>
-  <pre id="Conclusion_InText">
-     Supernovae in binary systems can lead to all kinds of interesting outcomes. Unlike a supernova from a single star, the explosion in a binary can actually hit the companion star and change it
-     and sometimes by blasting off some of its outer layers or mixing up its chemical makeup. In many cases, the force of the explosion is strong enough to break the system apart completely, sending the surviving star speeding through space as a runaway.
+    <p id="Conclusion_InText" class="para">
+Supernovae in binary systems can lead to all kinds of interesting outcomes. Unlike a supernova from a single star, the explosion in a binary can actually hit the companion star and change it,
+sometimes by blasting off some of its outer layers or mixing up its chemical makeup. In many cases, the force of the explosion is strong enough to break the system apart completely, sending the surviving star speeding through space as a runaway.
 
-     These kinds of effects help astronomers track down where supernovae happened in the past and understand how stars change over time. Both computer simulations and real observations show that supernovae in binary systems have a big influence on the stars we see in our galaxy today.
-  </pre>
-  
-   <hr>
-  <h3 id="References">References</h3>
-  <pre>
-   Marietta, E., Burrows, A. & Fryxell, B. (2000) ‘Type Ia Supernova Explosions in Binary Systems: The Impact on the Secondary Star and Its Consequences’, The Astrophysical Journal Supplement Series, 128(2), pp. 615–650.
-   Chandrasekhar, S. (1931) ‘The Maximum Mass of Ideal White Dwarfs’, Astrophysical Journal, 74, pp. 81–82.
-   Thorsett, S. E. (1996) ‘The Gravitational Constant, the Chandrasekhar Limit, and Neutron Star Masses’, Physical Review Letters, 77, pp. 1432–1435.
-   Suda, T., Saitoh, T.R., Moritani, Y., Matsuno, T. and Shigeyama, T., 2021. First star survivors as metal-rich halo stars that experienced supernova explosions in binary systems. Publications of the Astronomical Society of Japan, 73(3), pp.609–629.
-   Dincel, B., Uzuner, M., Neuhauser, R., Pannicke, A., Yerli, S.K., Ankay, A., Mugrauer, M. and Torres, G., 2024. Searching for OB-type pre-supernova binary companions inside supernova remnants. Monthly Notices of the Royal Astronomical Society, 531(4), pp.4212–4237.
-  </pre>
-  
-   <hr>
+These kinds of effects help astronomers track down where supernovae happened in the past and understand how stars change over time. Both computer simulations and real observations show that supernovae in binary systems have a big influence on the stars we see in our galaxy today.
+    </p>
+  </div>
 
+  <hr />
+
+  <div class="section">
+    <h3 id="References">References</h3>
+    <p class="para">
+Marietta, E., Burrows, A. &amp; Fryxell, B. (2000) ‘Type Ia Supernova Explosions in Binary Systems: The Impact on the Secondary Star and Its Consequences’, The Astrophysical Journal Supplement Series, 128(2), pp. 615–650.<br /><br />
+Chandrasekhar, S. (1931) ‘The Maximum Mass of Ideal White Dwarfs’, Astrophysical Journal, 74, pp. 81–82.<br /><br />
+Thorsett, S. E. (1996) ‘The Gravitational Constant, the Chandrasekhar Limit, and Neutron Star Masses’, Physical Review Letters, 77, pp. 1432–1435.<br /><br />
+Suda, T., Saitoh, T.R., Moritani, Y., Matsuno, T. and Shigeyama, T. (2021) ‘First star survivors as metal-rich halo stars that experienced supernova explosions in binary systems’, Publications of the Astronomical Society of Japan, 73(3), pp. 609–629.<br /><br />
+Dincel, B., Uzuner, M., Neuhauser, R., Pannicke, A., Yerli, S.K., Ankay, A., Mugrauer, M. and Torres, G. (2024) ‘Searching for OB-type pre-supernova binary companions inside supernova remnants’, Monthly Notices of the Royal Astronomical Society, 531(4), pp. 4212–4237.<br /><br />
+Liu, Z.-W., Röpke, F.K. and Han, Z. (2023) ‘Type Ia Supernova Explosions in Binary Systems: A Review’, Research in Astronomy and Astrophysics, 23, 082001.
+    </p>
+  </div>
+
+  <hr />
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
