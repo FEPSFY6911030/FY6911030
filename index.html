@@ -126,29 +126,30 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  width: 100%;        /* full page width */
-  max-width: 1400px;  /* gives room for the large image */
-  margin: auto;
+  width: 100%;
+  max-width: 1600px; 
+  margin: 20px auto;
 }
 
 .math-text {
-  flex: 0 0 55%; /* text takes left half */
-  max-width: 700px;
+  flex: 1;             
+  max-width: 750px;    
 }
 
 .math-image {
-  flex: 0 0 40%; /* image takes the big empty area */
-  text-align: right;
+  flex: 1;             
+  text-align: center;
 }
 
 .math-image img {
-  width: 100%;
-  max-width: 500px; /* make image larger */
+  width: 90%;          
+  max-width: 600px;    
   height: auto;
   border: 1px solid #ccc;
-  padding: 4px;
-  box-sizing: border-box;
+  padding: 6px;
+  background: white;
 }
+
 
 </style>
 
@@ -237,8 +238,10 @@ In addition, recent reviews highlight how different binary scenarios can lead to
     <h3 id="Mathematics_and_graphs">Mathematics and graphs</h3>
 
     <div class="math-flex">
-      <div class="math-text">
-        <p id="Mathematics_and_graphs_InText" class="para">
+
+  <div class="math-text">
+
+    <p id="Mathematics_and_graphs_InText" class="para">
 The physics of supernovae in binary systems can be described using several key ideas and equations. One important concept is the Chandrasekhar limit, which defines the maximum mass a white dwarf can support before collapsing. If a white dwarf in a binary system accretes enough material from its companion star to approach this limit, electron degeneracy pressure is no longer able to support it. This triggers a thermonuclear explosion 
 (<a href="https://academic.oup.com/mnras/article/91/5/456/985147" target="_blank">Chandrasekhar, 1931</a>; 
 <a href="https://doi.org/10.1103/PhysRevLett.77.1432" target="_blank">Thorsett, 1996</a>).
@@ -253,17 +256,13 @@ where G is the gravitational constant, M is the mass and R is the radius.
 
 These ideas help explain why some companion stars are flung away at high speeds or show physical damage after the explosion 
 (<a href="https://doi.org/10.1086/313408" target="_blank">Marietta, Burrows and Fryxell, 2000</a>).
-        </p>
-      </div>
+    </p>
 
-      <div class="math-image">
-        <img src="supernova.png" alt="Supernova">
-        <figcaption><b>Figure 1.</b> Simple diagram of a Type Ia supernova interaction in a binary system.</figcaption>
-      </div>
-    </div>
-
+    <!-- TABLE GOES HERE -->
     <table class="data-table">
-      <caption style="text-align:left; margin-bottom:4px;"><b>Table 1.</b> Different types of Type Ia supernovae and the basic conditions required.</caption>
+      <caption style="text-align:left; margin-bottom:4px;">
+        <b>Table 1.</b> Different types of Type Ia supernovae and the basic conditions required.
+      </caption>
       <thead>
         <tr>
           <th>Supernova type</th>
@@ -283,7 +282,7 @@ These ideas help explain why some companion stars are flung away at high speeds 
           <td>91T-like</td>
           <td>Very bright</td>
           <td>Slow decline</td>
-          <td>High-mass white dwarf with strong iron group elements; high accretion.</td>
+          <td>High-mass white dwarf with strong iron-group elements; high accretion.</td>
         </tr>
         <tr>
           <td>91bg-like</td>
@@ -301,11 +300,19 @@ These ideas help explain why some companion stars are flung away at high speeds 
           <td>Super-Chandrasekhar</td>
           <td>Extremely bright</td>
           <td>Slow decline</td>
-          <td>White dwarf exceeding the Chandrasekhar mass, likely from double-degenerate merger.</td>
+          <td>White dwarf exceeding the Chandrasekhar mass, likely from a double-degenerate merger.</td>
         </tr>
       </tbody>
     </table>
+
   </div>
+
+  <div class="math-image">
+    <img src="supernova.png" alt="Supernova diagram">
+    <figcaption><b>Figure 1.</b> Simple diagram of a Type Ia supernova interaction in a binary system.</figcaption>
+  </div>
+
+</div>
 
  <hr>
   <div class="section">
