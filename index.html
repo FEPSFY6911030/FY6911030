@@ -121,41 +121,35 @@
     background-color: #f9f9f9;
   }
 
-  /* layout for maths text + image */
   .math-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 900px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;        /* full page width */
+  max-width: 1400px;  /* gives room for the large image */
+  margin: auto;
+}
 
-  .math-text {
-    flex: 1;
-  }
+.math-text {
+  flex: 0 0 55%; /* text takes left half */
+  max-width: 700px;
+}
 
-  .math-image {
-    flex: 0 0 320px;
-    text-align: right;
-  }
+.math-image {
+  flex: 0 0 40%; /* image takes the big empty area */
+  text-align: right;
+}
 
-  .math-image img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 4px;
-    box-sizing: border-box;
-  }
+.math-image img {
+  width: 100%;
+  max-width: 500px; /* make image larger */
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 4px;
+  box-sizing: border-box;
+}
 
-  .refs a,
-  .refs a:visited {
-    color: black;
-    text-decoration: none;
-  }
-
-  .refs a:hover {
-    text-decoration: underline;
-  }
 </style>
 
 </head>
@@ -313,6 +307,7 @@ These ideas help explain why some companion stars are flung away at high speeds 
     </table>
   </div>
 
+ <hr>
   <div class="section">
   <h3 id="References">References</h3>
   <p class="para refs">
