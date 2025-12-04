@@ -8,147 +8,156 @@
     <h2 style="font-family:calibri;"><b>Conference paper: Supernova in binary star systems</b></h2>
     <hr>
 
-    <style>
-    body {
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0 50px 50px 50px;
-      font-family: Calibri, Arial, sans-serif;
-    }
+   <style>
+  body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0 50px 50px 50px;
+    font-family: Calibri, Arial, sans-serif;
+  }
 
-    header {
-      max-width: 1200px;
-      margin: 0 auto 20px auto;
-      text-align: left;
-    }
+  header {
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+  }
 
-    header img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
+  header img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-    h1, h2, h3 {
-      margin: 5px 0;
-    }
+  h1, h2, h3 {
+    margin: 5px 0;
+  }
 
-    hr {
-      margin: 15px 0;
-    }
+  hr {
+    margin: 15px 0;
+  }
 
-    
-    table.toc {
-      font-family: Calibri, Arial, sans-serif;
-      border-collapse: collapse;
-      width: 30%;
-      margin-bottom: 20px;
-    }
+  table.toc {
+    font-family: Calibri, Arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    margin-bottom: 20px;
+  }
 
-    table.toc td,
-    table.toc th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
+  table.toc td,
+  table.toc th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
 
-    table.toc tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
+  table.toc tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
-    paper title {
-      font-size: 40px;
-      text-align: center;
-      font-weight: bold;
-      margin: 20px auto 30px auto;
-      max-width: 900px;
-    }
+  .paper-title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto 30px auto;
+    max-width: 900px;
+  }
 
-    para {
-      font-size: 16px;
-      line-height: 1.5;
-      text-align: justify;
-      white-space: pre-wrap; 
-      margin-bottom: 10px;
-      max-width: 900px;
-    }
+  .para {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    max-width: 900px;
+  }
 
-    last updated {
-      margin-top: 20px;
-      font-size: 14px;
-      font-style: italic;
-    }
+  #last-updated {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+  }
 
-    section {
-      max-width: 900px;
-      margin-bottom: 20px;
-    }
+  .section {
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
 
+  .figure {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+  }
 
-         figure {
-      max-width: 900px;
-      margin: 20px auto;
-      text-align: center;
-    }
+  .figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dddddd;
+    padding: 4px;
+    box-sizing: border-box;
+  }
 
-    figure img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #dddddd;
-      padding: 4px;
-      box-sizing: border-box;
-    }
+  .figure figcaption {
+    font-size: 14px;
+    margin-top: 6px;
+  }
 
-    figure figcaption {
-      font-size: 14px;
-      margin-top: 6px;
-    }
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin: 15px 0 20px 0;
+    font-size: 15px;
+  }
 
-    data-table {
-      border-collapse: collapse;
-      width: 100%;
-      max-width: 900px;
-      margin: 15px 0 20px 0;
-      font-size: 15px;
-    }
+  .data-table th,
+  .data-table td {
+    border: 1px solid #dddddd;
+    padding: 6px 8px;
+    text-align: left;
+  }
 
-    data table th,
-    data table td {
-      border: 1px solid #dddddd;
-      padding: 6px 8px;
-      text-align: left;
-    }e
+  .data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
 
-    data table tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
+  /* layout for maths text + image */
+  .math-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+  }
 
-     math flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  max-width: 1000px;
-}
+  .math-text {
+    flex: 1;
+  }
 
-math text {
-  flex: 1;
-}
+  .math-image {
+    flex: 0 0 320px;
+    text-align: right;
+  }
 
-math image {
-  flex: 0 0 350px; 
-  text align: right;
-}
+  .math-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 4px;
+    box-sizing: border-box;
+  }
 
-math image img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  padding: 4px;
-}
+  .refs a,
+  .refs a:visited {
+    color: black;
+    text-decoration: none;
+  }
 
+  .refs a:hover {
+    text-decoration: underline;
+  }
+</style>
 
-  </style>
 </head>
 
 <body>
@@ -230,12 +239,15 @@ In addition, recent reviews highlight how different binary scenarios can lead to
   <hr>
 
  
-  <div class="section">
+    <div class="section">
     <h3 id="Mathematics_and_graphs">Mathematics and graphs</h3>
-    <p id="Mathematics_and_graphs_InText" class="para">
+
+    <div class="math-flex">
+      <div class="math-text">
+        <p id="Mathematics_and_graphs_InText" class="para">
 The physics of supernovae in binary systems can be described using several key ideas and equations. One important concept is the Chandrasekhar limit, which defines the maximum mass a white dwarf can support before collapsing. If a white dwarf in a binary system accretes enough material from its companion star to approach this limit, electron degeneracy pressure is no longer able to support it. This triggers a thermonuclear explosion 
 (<a href="https://academic.oup.com/mnras/article/91/5/456/985147" target="_blank">Chandrasekhar, 1931</a>; 
-<a href="https://doi.org/10.1103/PhysRevLett.77.1432" target="_blank">Thorsett, 1996</a>)
+<a href="https://doi.org/10.1103/PhysRevLett.77.1432" target="_blank">Thorsett, 1996</a>).
 
 Another simple idea concerns whether a binary system stays bound after an explosion: if the supernova ejects more than half of the total mass of the system, then gravity becomes too weak to keep the stars together, and the companion can fly away as a runaway star.
 
@@ -247,9 +259,15 @@ where G is the gravitational constant, M is the mass and R is the radius.
 
 These ideas help explain why some companion stars are flung away at high speeds or show physical damage after the explosion 
 (<a href="https://doi.org/10.1086/313408" target="_blank">Marietta, Burrows and Fryxell, 2000</a>).
-    </p>
+        </p>
+      </div>
 
-    
+      <div class="math-image">
+        <img src="supernova.png" alt="Supernova">
+        <figcaption><b>Figure 1.</b> Simple diagram of a Type Ia supernova interaction in a binary system.</figcaption>
+      </div>
+    </div>
+
     <table class="data-table">
       <caption style="text-align:left; margin-bottom:4px;"><b>Table 1.</b> Different types of Type Ia supernovae and the basic conditions required.</caption>
       <thead>
@@ -295,45 +313,6 @@ These ideas help explain why some companion stars are flung away at high speeds 
     </table>
   </div>
 
-  <hr>
-
- <div class="math image">
-    <img src="supernova.png" alt="Supernova">
-    <figcaption><b>Figure 1.</b> Simple diagram of type 1a interation.</figcaption>
-  </div>
-
-</div>
-
-  
-  <div class="section">
-    <h3 id="Results">Results</h3>
-    <p id="Results_InText" class="para">
-Scientists studying binary supernovae have found several important outcomes. First, the companion star can be physically damaged by the explosion. Fast-moving ejecta can remove parts of its outer layers or heat it up significantly 
-(<a href="https://doi.org/10.1086/313408" target="_blank">Marietta, Burrows and Fryxell, 2000</a>).
-
-Second, many high-speed "runaway" stars appear to be the surviving companions of binary systems disrupted by a supernova 
-(<a href="https://doi.org/10.1093/mnras/stae1307" target="_blank">Dincel et al., 2024</a>).
-
-Finally, some stars show unusual chemical patterns, including heavy-element pollution or low lithium levels, suggesting they were exposed to supernova material in the past 
-(<a href="https://doi.org/10.1093/pasj/psab024" target="_blank">Suda et al., 2021</a>).
-    </p>
-  </div>
-
-  <hr>
-
- 
-  <div class="section">
-    <h3 id="Conclusion">Conclusion</h3>
-    <p id="Conclusion_InText" class="para">
-Supernovae in binary systems can lead to dramatic effects. Unlike single-star supernovae, the explosion can hit the companion star directly, sometimes stripping its outer layers or changing its chemical makeup. In many cases, the explosion disrupts the system entirely, sending the surviving star flying away as a runaway.
-
-These effects help astronomers trace past explosions and better understand how stars evolve. Simulations and observations both show that supernovae in binary systems heavily influence the properties of the stars we see today.
-    </p>
-  </div>
-
-  <hr>
-
-  
   <div class="section">
   <h3 id="References">References</h3>
   <p class="para refs">
